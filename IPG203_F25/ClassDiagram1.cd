@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="IPG203_F25.Models.AirConditioner" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEACAAEAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AirConditioner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IPG203_F25.Models.Appliance" Collapsed="true">
+    <Position X="8.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEACEAEEAAAAACCACBAAAAAQAAAAAABEAAoAAAAAAA=</HashCode>
+      <FileName>Models\Appliance.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IPG203_F25.Models.Microwave" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEACAAEAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Microwave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IPG203_F25.Models.Refrigerator" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEACAAEAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Refrigerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IPG203_F25.Models.WashingMachine" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEACAAEAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\WashingMachine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IPG203_F25.Services.ApplianceManager" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABBAAAAAAAAAAAAAAIAAAAABAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Services\ApplianceManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="IPG203_F25.Interfaces.IApplianceService" Collapsed="true">
+    <Position X="4.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAEAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IApplianceService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
