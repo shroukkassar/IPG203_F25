@@ -1,7 +1,7 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Text;
-
+  
 namespace IPG203_F25.Models
 {
     public class AirConditioner : Appliance
@@ -10,14 +10,18 @@ namespace IPG203_F25.Models
         : base(deviceId, deviceName, modelNumber, deviceStatus, receivedDate, customerName, customerNumber)
         {
         }
+        //<summary>
+        //This method checks the status of the air conditionar and updates its status acoordingly
+        //</summary>
+
         public override void DeviceCheck()
         {
             Console.WriteLine($"Checking the status of Air Conditioner: {DeviceName}, Model: {ModelNumber} ");
             bool areComponentsWorking = true; // متحول يعبر عن جميع قطع المكيف
-
+             
             if (areComponentsWorking)
-            {
-                Console.WriteLine("All components are working correctly.\n");
+            { 
+                 Console.WriteLine("All components are working correctly.\n");
                 DeviceStatus = "Sound"; // حالة الجهاز سليم
             }
             else
@@ -27,12 +31,18 @@ namespace IPG203_F25.Models
                 DeviceStatus = "Not Sound"; // حالة الجهاز غير سليم
             }
         }
+        //<summary>
+        //This method starts the maintenance for the air conditioner
+        //</summary>
 
         public override void StartMaintenance()
         {
             Console.WriteLine($"Starting maintenance for Air Conditioner: {DeviceName}, Model: {ModelNumber} ");
             DeviceStatus = "Under Maintenance"; // حالة الجهاز تحت الصيانة
         }
+        //<summary>
+        //This methid updates the status of the conditionar after maintenance
+        //</summary>
 
         public override void UpdateStatus()
         {
@@ -40,6 +50,10 @@ namespace IPG203_F25.Models
             DeviceStatus = "Fixed and Ready"; // حالة الجهاز بعد الفحص والإصلاح
             SendNotification("The air conditioner has been fixed and is ready for use.");
         }
+        //<summary>
+        //This method calculates the cost of maintaining the air conditioner
+        //</summary>
+
 
         public override double CalculateCost()
         {

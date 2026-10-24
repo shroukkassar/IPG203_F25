@@ -32,9 +32,15 @@ namespace IPG203_F25.Models
       public virtual void DeviceCheck() { }
       public virtual void UpdateStatus() { }
 
-      public delegate void StatusNotify(string message);
-      public event StatusNotify OnStatusChanged;
+        //Delegate signature for broadcasting status updates notifications
+        public delegate void StatusNotify(string message);
 
+        // Event triggered whenever an appliance's
+        public event StatusNotify OnStatusChanged;
+
+        //<summary>
+        // Sends a notification about the appliance's status change.
+        //</summary>
         public void SendNotification(string message)
         {
             if (OnStatusChanged != null)
@@ -44,3 +50,4 @@ namespace IPG203_F25.Models
         }
     }
 }
+
