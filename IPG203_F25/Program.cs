@@ -8,8 +8,9 @@ namespace IPG203_F25
     {
         static void Main(string[] args)
         {
+            UserUi ui = new UserUi();
+            ui.ShowMainMenu();
         }
     }
 }
 
- 
